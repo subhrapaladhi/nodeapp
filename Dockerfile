@@ -1,0 +1,6 @@
+FROM node:14.15.4
+WORKDIR /app
+COPY . .
+ENV PORT 3000
+EXPOSE $PORT
+CMD ["npm","start"]
